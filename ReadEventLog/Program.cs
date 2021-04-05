@@ -5,7 +5,7 @@ namespace ReadEventLog
 {
   class Program
   {
-    static void Main(string[] args)
+    static void Main()
     {
       string log = "System";
       EventLog demoLog = new EventLog(log);
