@@ -20,15 +20,15 @@ namespace ReadEventLog
         //6008  The previous system shutdown was unexpected.
         //6009  The operating system version detected at the system startup.
         //6013  The system uptime in seconds.
-        if (entry.InstanceId == 41 || entry.InstanceId == 6008)
-        {
-          Console.WriteLine("Level: {0}", entry.EntryType);
-          Console.WriteLine("Event id: {0}", entry.InstanceId);
-          Console.WriteLine("Message: {0}", entry.Message);
-          Console.WriteLine("Source: {0}", entry.Source);
-          Console.WriteLine("Date: {0}", entry.TimeGenerated);
-          Console.WriteLine("--------------------------------");
-        }
+        //if (entry.InstanceId == 41 || entry.InstanceId == 6008)
+        //{
+        Console.WriteLine("Level: {0}", entry.EntryType);
+        Console.WriteLine("Event id: {0}", entry.InstanceId);
+        Console.WriteLine("Message: {0}", entry.Message);
+        Console.WriteLine("Source: {0}", entry.Source);
+        Console.WriteLine("Date: {0}", entry.TimeGenerated);
+        Console.WriteLine("--------------------------------");
+        //}
       }
 
       Console.WriteLine("Press any key to exit:");
